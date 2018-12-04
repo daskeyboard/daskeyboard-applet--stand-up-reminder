@@ -9,7 +9,7 @@ This applet will remind you to stand up every hour by blinking a key of your cho
 
 The "D" key will blink red every hour and :10 minutes to remind you to stand up.
 
-![Stand Up Reminder on a Das Keybaord Q](assets/stand-up-reminder.png "Q Stock quote")
+![Stand Up Reminder on a Das Keybaord Q](assets/stand_up_reminder_result.png "Stand Up Reminder result")
 
 ## Changelog
 
