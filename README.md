@@ -3,7 +3,7 @@
 Do you find yourself sitting at your desk for long periods at a time?
 This applet will remind you to stand up every hour by blinking a key of your choice.
 
-[GitHub repository](https://github.com/daskeyboard/daskeyboard-applet--stand-up-reminder)
+[GitHub repository](assets/stand-up-reminder.png)
 
 ## Example
 
