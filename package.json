@@ -49,7 +49,7 @@
     },
     "questions": [{
       "key": "reminder",
-      "label": "Standing every hour is heathly. Choose how many minutes past the hour you want to be reminded.",
+      "label": "Standing every hour is heathly. Choose how many minutes past the hour you want to be reminded to stand up.",
       "help": "",
       "required": true,
       "order": 1,
