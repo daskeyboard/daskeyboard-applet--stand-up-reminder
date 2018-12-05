@@ -1,4 +1,3 @@
-yarn 
 const assert = require('assert');
 const {
   StandReminder
