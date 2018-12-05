@@ -49,7 +49,7 @@
     },
     "questions": [{
       "key": "reminder",
-      "label": "Standing every hour is healthy. Choose whether you want to stand on the hour, :15 after, etc.",
+      "label": "Standing every hour is heathly. Choose how many minutes past the hour you want to be reminded.",
       "help": "",
       "required": true,
       "order": 1,
