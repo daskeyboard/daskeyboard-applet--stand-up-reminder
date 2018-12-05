@@ -1,13 +1,9 @@
-//this document allow me to test step by step 
-//I had to test each function step by step
-
-
+yarn 
 const assert = require('assert');
 const {
   StandReminder
 } = require('../index');
 
-//on test si nous rentrons bien dans la class StandReminder
 describe('StandReminder', () => {
   describe('#constructor()', function () {
     it('should construct', function () {
@@ -16,7 +12,7 @@ describe('StandReminder', () => {
     });
   });
 
-  //on test si la config est bien codee
+
   describe('#processConfig', function () {
     let reminder = 1;
     const config = {
@@ -44,8 +40,8 @@ describe('StandReminder', () => {
       app.config.reminder = reminder;
 
       return app.run().then((signal) => {
-        console.log(signal);//ecrit signal sur le terminal si on est passe jusque la
-        assert.ok(signal); //verifie si le signal est bien envoye
+        console.log(signal);
+        assert.ok(signal);
         console.log(signal.message);
         assert(signal.message.includes(reminder));
         assert(signal.name.includes('Stand Reminder'));
@@ -55,6 +51,3 @@ describe('StandReminder', () => {
     })
   });  
 })
-
-
-//the problem I need to solve is > the message doesn 't work 
