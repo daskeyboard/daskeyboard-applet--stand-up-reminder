@@ -9,7 +9,7 @@ This applet will remind you to stand up every hour by blinking a key of your cho
 
 The "D" key will blink red every hour and :10 minutes to remind you to stand up.
 
-![Stand Up Reminder on a Das Keybaord Q](assets/stand_up_reminder_result.png "Stand Up Reminder result")
+![Stand Up Reminder on a Das Keybaord Q](assets/image.png "Stand Up Reminder result")
 
 ## Changelog
 
@@ -21,6 +21,9 @@ Requires a Das Keyboard Q Series: www.daskeyboard.com/5q
 
 Installation, configuration and uninstallation of applets is done within
 the Q Desktop application (https://www.daskeyboard.io/get-started/software/)
+
+## Run Test
+To run the test file use the following command: `yarn test`.
 
 ## Docs & Contribute
 
