@@ -9,7 +9,7 @@
   "publisherName": "Das Keyboard",
   "isSingleton": false,
   "icon": "assets/icon.png",
-  "image": "assets/stand-up-reminder.png",
+  "image": "assets/image.png",
   "authorName": "Das Keyboard",
   "authorUrl": "https://twitter.com/daskeyboard",
   "issuesUrl": "https://github.com/daskeyboard/daskeyboard-applet--stand-up-reminder/issues",
