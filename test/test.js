@@ -1,5 +1,9 @@
-yarn 
+//The test.js file is not finished.
+
 const assert = require('assert');
+const minuteAfterTheHour = '10';
+const t = require('../index');
+
 const {
   StandReminder
 } = require('../index');
@@ -13,41 +17,38 @@ describe('StandReminder', () => {
   });
 
 
-  describe('#processConfig', function () {
-    let reminder = 1;
-    const config = {
-      applet: {
-        defaults: {
-          reminder: reminder
-        }
-      },
-      geometry: {
-        width: 1,
-        height: 1,
-      }
-    };
-
-    let app = new StandReminder();
-    app.processConfig(config);
-
-    assert.equal(reminder, app.config.reminder);
-  })
-
   describe('#run()', () => {
     it('sends a reminder ', async function () {
-      let app = new StandReminder();
-      let reminder = 1;
-      app.config.reminder = reminder;
-
-      return app.run().then((signal) => {
-        console.log(signal);
-        assert.ok(signal);
-        console.log(signal.message);
-        assert(signal.message.includes(reminder));
-        assert(signal.name.includes('Stand Reminder'));
-      }).catch((error) => {
-        assert.fail(error)
-      });
-    })
+     let app = await buildApp();
+      assert.equal(reminder, app.config.reminder);
+      return buildApp().then(app =>{
+        return app.run().then((signal) => {
+          assert.ok(signal);
+          assert(signal.name.includes(minuteAfterTheHour));
+          assert(signal.message.includes(minuteAfterTheHour));
+        }).catch((error) => {
+          assert.fail(error)
+        });
+      })
+    });
   });  
 })
+
+const defaultConfig = {
+  applet: {
+    user: {
+      minuteAfterTheHour: minuteAfterTheHour
+    }
+  },
+  geometry: {
+    width: 1,
+    height: 1,
+  }
+};
+
+
+async function buildApp(config) {
+  let app = new t.StandReminder();
+  await app.processConfig(config || defaultConfig);
+  return app;
+}

@@ -22,8 +22,8 @@ Requires a Das Keyboard Q Series: www.daskeyboard.com/5q
 Installation, configuration and uninstallation of applets is done within
 the Q Desktop application (https://www.daskeyboard.io/get-started/software/)
 
-## Run Test
-To run the test file use the following command: `yarn test`.
+## Test.js File
+The test.js file is not finished.
 
 ## Docs & Contribute
 
