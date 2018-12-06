@@ -26,6 +26,13 @@ the Q Desktop application (https://www.daskeyboard.io/get-started/software/)
 The test.js file is not finished.
 
 ## Docs & Contribute
+## Running tests
+
+    yarn test
+
+## Contributions
+
+Pull requests welcome.
 
 ## Copyright / License
 
