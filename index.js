@@ -15,8 +15,8 @@ class StandReminder extends q.DesktopApp {
     var n = now.getMinutes();
     var sec = now.getSeconds();
 
-    const reminder = this.config.reminder;
-    var integer = parseInt(reminder, 10);
+    const minuteAfterTheHour = this.config.minuteAfterTheHour;
+    var integer = parseInt(minuteAfterTheHour, 10);
 
         if ( n == integer && sec == 0){
           
@@ -32,7 +32,9 @@ class StandReminder extends q.DesktopApp {
             message: `It's time to stand up!` 
           });
     }
-      else{      
+      else{   
+        // not time to blink
+        return null;   
        }   
   }
 }

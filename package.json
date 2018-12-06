@@ -44,7 +44,7 @@
     },
     "applet": {
       "defaults": {
-        "reminder": "0"
+        "minuteAfterTheHour": "0"
       }
     },
     "questions": [{
@@ -106,7 +106,7 @@
     }],
     "requirements": {
       "applet": {
-        "reminder": "string"
+        "minuteAfterTheHour": "string"
       }
     }
   },
