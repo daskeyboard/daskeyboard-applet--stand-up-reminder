@@ -3,7 +3,7 @@
 Do you find yourself sitting at your desk for long periods at a time?
 This applet will remind you to stand up every hour by blinking a key of your choice.
 
-[GitHub repository](assets/stand-up-reminder.png)
+[GitHub repository](https://github.com/daskeyboard/daskeyboard-applet--stand-up-reminder)
 
 ## Example
 
@@ -17,10 +17,10 @@ The "D" key will blink red every hour and :10 minutes to remind you to stand up.
 
 ## Installation
 
-Requires a Das Keyboard Q Series: www.daskeyboard.com/5q
+Requires a Das Keyboard Q Series: www.daskeyboard.com
 
 Installation, configuration and uninstallation of applets is done within
-the Q Desktop application (https://www.daskeyboard.io/get-started/software/)
+the Q Desktop application (https://www.daskeyboard.com/q)
 
 ## Running tests
 
