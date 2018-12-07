@@ -29,7 +29,7 @@
   "author": "Shirley Truffier-Blanc",
   "license": "MIT",
   "dependencies": {
-    "daskeyboard-applet": "^2.8.1",
+    "daskeyboard-applet": "^2.10.4",
     "request-promise": "^4.2.2"
   },
   "qConfig": {
