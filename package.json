@@ -47,7 +47,7 @@
       }
     },
     "questions": [{
-      "key": "reminder",
+      "key": "minuteAfterTheHour",
       "label": "Standing every hour is heathly. Choose how many minutes past the hour you want to be reminded to stand up.",
       "help": "",
       "required": true,
