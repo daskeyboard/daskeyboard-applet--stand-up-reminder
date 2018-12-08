@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "description": "Hourly stand up reminder",
   "longDescription": "Get stand up alerts directly on a Das Keybaord Q devices.",
-  "officialProductName": "Stand Up Reminder",
+  "officialProductName": "",
   "publisherName": "Das Keyboard",
   "isSingleton": false,
   "icon": "assets/icon.png",
