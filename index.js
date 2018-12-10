@@ -7,7 +7,7 @@ class StandReminder extends q.DesktopApp {
   constructor() {
     super();
     this.pollingInterval = 1000;
-    logger.info("Stand Up Reminder ready to go!");
+    logger.info("StandReminder, Stand Up Reminder ready to go!");
   }
 
   async run() {
@@ -18,24 +18,23 @@ class StandReminder extends q.DesktopApp {
     const minuteAfterTheHour = this.config.minuteAfterTheHour;
     var integer = parseInt(minuteAfterTheHour, 10);
 
-        if ( n == integer && sec == 0){
-          
-          logger.info("Running.");
-          const color = '#FF0000';
-          console.log("send a signal");
+    if (n == integer && sec == 0) {
 
-          return new q.Signal({
-            points: [
-              [new q.Point(color, q. Effects.BLINK)]
-            ],
-            name: 'Stand Up Reminder',
-            message: `It's time to stand up!` 
-          });
+      logger.info("StandReminder, time to stand up.");
+      const color = '#FF0000';
+
+      return new q.Signal({
+        points: [
+          [new q.Point(color, q.Effects.BLINK)]
+        ],
+        name: 'Stand Up Reminder',
+        message: `It's time to stand up!`
+      });
+    } else {
+      logger.info('StandReminder, not time to stand up');
+      // not time to blink
+      return null;
     }
-      else{   
-        // not time to blink
-        return null;   
-       }   
   }
 }
 
