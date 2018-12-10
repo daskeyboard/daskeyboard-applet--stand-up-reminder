@@ -41,17 +41,13 @@
         "y": 1
       }
     },
-    "applet": {
-      "defaults": {
-        "minuteAfterTheHour": "0"
-      }
-    },
     "questions": [{
       "key": "minuteAfterTheHour",
       "label": "Standing every hour is heathly. Choose how many minutes past the hour you want to be reminded to stand up.",
       "help": "",
       "required": true,
       "order": 1,
+      "value":"0",
       "controlType": "dropdown",
       "options": [{
           "key": 0,
