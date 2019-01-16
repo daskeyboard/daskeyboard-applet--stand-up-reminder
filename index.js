@@ -31,7 +31,6 @@ class StandReminder extends q.DesktopApp {
         message: `It's time to stand up!`
       });
     } else {
-      logger.info('StandReminder, not time to stand up');
       // not time to blink
       return null;
     }
